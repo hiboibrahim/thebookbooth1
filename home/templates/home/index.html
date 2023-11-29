@@ -1,5 +1,17 @@
-{% extends base.html %}
+{% extends "base.html" %}
 
 {% block content %}
-
+<!-- put content here -->
+<div class="row">
+    <div class="col">
+        <h1 class="text-danger"> danger</h1>
+    </div>
+</div>
+<div class="row">
+    {% for book in book_list %}
+    <div class="col">
+        {{ book.title }}
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
