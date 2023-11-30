@@ -1,0 +1,42 @@
+{% load static %}
+
+{% with request.resolver_match_url_name as url_name %}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
+                    href="{% url 'home' %}">Home</a>
+            </li>
+            <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
+                    href="{% url 'home' %}">About Us</a>
+            </li>
+            {% if perms.lessons.add_book %}
+                <li class="nav-item">
+                    <a class="nav-link {% if url_name == 'add_lesson' %}active{% endif %}" href="{% url 'add_lesson' %}">Add lesson</a>
+                </li>
+            {% endif %}
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                    href="{% url 'account_logout' %}">Logout</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == modules_url %}active" aria-current="page{% endif %}"
+                    href="{% url 'modules' %}">Add a Book</a>
+            </li>        
+            {% else %} <li class="nav-item">
+                <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
+                    href="{% url 'account_signup' %}">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
+                    href="{% url 'account_login' %}">Login</a>
+            </li>
+
+            </li>
+             {% endif %}
+        </ul> <span class="navbar-text text-muted"><strong> Join Our Reading Community</strong> </span>
+    </div>
+</nav>
+{% endwith %}

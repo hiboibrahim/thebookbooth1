@@ -6,8 +6,14 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--main-font);
+    background-color: red;
 }
 
+
+.navbar {
+    color: brown;
+
+}
 main {
     flex: 1 0 auto;
     background-color: var(--white);
