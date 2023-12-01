@@ -32,6 +32,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = ['8000-hiboibrahim-thebookboot-hvg9ku99qbo.ws-us106.gitpod.io','.herokuapp.com']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -109,7 +110,7 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     'http://*.gitpod.io',
     'http://*.herokuapp.com',
-    '8000-hiboibrahim-thebookboot-9p75fkhyjnz.ws-us106.gitpod.io',
+    '8000-hiboibrahim-thebookboot-hvg9ku99qbo.ws-us106.gitpod.io',
 ]
 
 # Password validation
@@ -155,10 +156,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_URL = "static/"
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+os.path.join(BASE_DIR, "static"),
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

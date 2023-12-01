@@ -11,7 +11,7 @@ body {
 
 
 .navbar {
-    color: brown;
+    color: grey;
 
 }
 main {
@@ -22,7 +22,7 @@ main {
 /* Footer */
 footer {
     flex-shrink: 0;
-    background-color: green;
+    background-color: pink;
     display: flex;
     flex-direction: row;
     justify-content: center;
