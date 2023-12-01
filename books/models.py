@@ -25,7 +25,8 @@ class Book(models.Model):
         Genre, null=False, blank=False, on_delete=models.CASCADE)
     language = models.ForeignKey(
         Language, null=False, blank=False, on_delete=models.CASCADE)
-    summary = models.CharField(max_length=300, null=False, blank=False)
+    excerpt = models.CharField(max_length=300, null=False, blank=False)
+    status = models.CharField(max_length=300, null=False, blank=False)
 
     def __str__(self):
         return self.title

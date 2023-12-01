@@ -4,14 +4,15 @@ from .models import Book
 
 class BookForm(forms.ModelForm):
     class Meta:
-        model = Books
+        model = Book
         fields = [
             'title',
             'author',
             'language',
             'genre',
             'status',
-            'excerpt',
+            'excerpt'
+          
             ]
                   
         labels = {
@@ -27,8 +28,6 @@ class BookForm(forms.ModelForm):
     def save(self, commit=True):
         instance = super(BookForm, self).save(commit=False)
 
-        # Prepopulate the slug based on the title
-        instance.slug = instance.title.lower().replace(' ', '-')
 
         if commit:
             instance.save()

@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary_storage',
     'django.contrib.sites',
+    'crispy_bootstrap5',
+    'crispy_forms',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -84,7 +86,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                
             ],
+            'builtins': [
+            'crispy_forms.templatetags.crispy_forms_tags',
+            'crispy_forms.templatetags.crispy_forms_field',
+        ],
         },
     },
 ]
@@ -110,7 +117,7 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     'http://*.gitpod.io',
     'http://*.herokuapp.com',
-    '8000-hiboibrahim-thebookboot-hvg9ku99qbo.ws-us106.gitpod.io',
+    'https://8000-hiboibrahim-thebookboot-hvg9ku99qbo.ws-us106.gitpod.io',
 ]
 
 # Password validation
