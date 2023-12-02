@@ -9,6 +9,19 @@ body {
     background-color: red;
 }
 
+/* Hero Image */ 
+
+.hero-image {
+    background-image:url("https://res.cloudinary.com/dtuvcebdg/image/upload/v1701534130/heroimage_c2ik12.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+}
+/*hero
 
 .navbar {
     color: grey;
