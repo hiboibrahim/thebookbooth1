@@ -12,6 +12,7 @@ class BookForm(forms.ModelForm):
             'genre',
             'status',
             'summary',
+        
           
             ]
                   

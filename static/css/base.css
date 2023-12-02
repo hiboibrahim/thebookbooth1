@@ -19,6 +19,20 @@ main {
     background-color: var(--white);
 }
 
+/* Card */ 
+.card {
+    height: 90%;
+    margin-top: 1rem;
+}
+
+.books{
+    text-decoration: none;
+    color: black;
+}
+.books:hover{
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     flex-shrink: 0;

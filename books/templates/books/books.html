@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}BROWSE OUR BOOKS{% endblock %}
+
+{% block content %}
+<div class="container d-flex flex-row flex-wrap justify-content-center">
+    <h1 class="text-center p-2">Latest Books</h1>
+
+    {% for book in books %}
+    <a class="books" href="" aria-label="Click to view{{books.title}}">
+        <div class="card" style="width: 18rem;">
+            <img src="{{book.image.url}}" class="card-img-top" alt="{{book.image_alt}}">
+            <div class="card-body">
+              <h2 class="card-title">{{book.title}}</h2>
+              <p class="card-text">{{book.summary}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </a>
+    {% endfor %}
+</div>
+
+{% endblock %}
