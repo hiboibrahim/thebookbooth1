@@ -7,7 +7,7 @@
     <h1 class="text-center p-2">Latest Books</h1>
 
     {% for book in books %}
-    <a class="books" href="" aria-label="Click to view{{books.title}}">
+    <a class="books" href="{% url 'book_detail' book.id %}" aria-label="Click to view{{books.title}}">
         <div class="card" style="width: 18rem;">
             <img src="{{book.image.url}}" class="card-img-top" alt="{{book.image_alt}}">
             <div class="card-body">

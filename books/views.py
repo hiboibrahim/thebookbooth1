@@ -5,7 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import permission_required
 from django.utils.decorators import method_decorator
 from django.http import HttpResponseRedirect
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, DetailView
 
 
 # Create your views here.
@@ -35,4 +35,11 @@ class BookList(ListView):
     model = Book
     queryset = Book.objects.all()
     template_name = "home/index.html"
+
+
+class BookDetail(DetailView):
+    model = Book
+    template_name = "book/books.html"
+    context_object_name = 'books'
+
 

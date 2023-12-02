@@ -33,6 +33,36 @@ main {
     cursor: pointer;
 }
 
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.book-detail{
+    width: 100%;
+
+}
+
+.book-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-pic {
+    width: 100%;
+    height: auto;
+}
+
+
+
 /* Footer */
 footer {
     flex-shrink: 0;
@@ -59,3 +89,29 @@ header {
 .active {
     border-bottom: 2px solid blue;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 62.5em) {
+    .main-title {
+        width: 50%;
+    }
+    
+    .book-info {
+        flex-direction: row;
+        border: 1px solid var(--black);
+    }
+
+    .book-img {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .book-detail {
+        width: 60%;
+        padding: 2rem;
+    }
+
+    .book-container {
+        flex-direction: row;
+    }
