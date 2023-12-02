@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'crispy_bootstrap5',
     'crispy_forms',
+    'cloudinary',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -168,6 +169,12 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
 os.path.join(BASE_DIR, "static"),
 ]
+
+# Cloudinary Settings
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+CLOUIDNARY_URL = os.environ.get('CLOUDINARY_URL')
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

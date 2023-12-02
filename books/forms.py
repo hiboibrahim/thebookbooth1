@@ -11,7 +11,7 @@ class BookForm(forms.ModelForm):
             'language',
             'genre',
             'status',
-            'excerpt'
+            'summary',
           
             ]
                   
@@ -21,7 +21,7 @@ class BookForm(forms.ModelForm):
             'genre': 'Genre',
             'language': 'Language',
             'status': 'Publish or Draft',
-            'excerpt': 'Brief Book Description',
+            'summary': 'Brief Book Description',
             }
 
 
