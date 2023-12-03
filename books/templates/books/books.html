@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}BROWSE OUR BOOKS{% endblock %}
 
 {% block content %}
+<h1 class="text-center p-2">Latest Books</h1>
+
 <div class="container d-flex flex-row flex-wrap justify-content-center">
-    <h1 class="text-center p-2">Latest Books</h1>
 
     {% for book in books %}
     <a class="books" href="{% url 'book_detail' book.id %}" aria-label="Click to view{{books.title}}">

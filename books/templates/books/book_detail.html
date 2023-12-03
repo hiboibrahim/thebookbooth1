@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %} Book Details - {{recipe.title}}{% endblock %}
+{% block title %} Book Details - {{book.title}}{% endblock %}
 
 {% block content %} 
     <div class="container">
@@ -16,8 +16,8 @@
 
                 {% if request.user == book.user %} 
                 <div class="text-center">
-                    <a href="{% url 'edit_recipe' recipe.id %}" class="btn btn-warning w-25">Edit</a>
-                    <a href="{% url 'delete_recipe' recipe.id %}" class="btn btn-warning w-25">Delete</a>
+                    <a href="{% url 'edit_book' book.id %}" class="btn btn-warning w-25">Edit</a>
+                    <a href="{% url 'delete_book' book.id %}" class="btn btn-warning w-25">Delete</a>
                 </div>
                 {% endif %}
             </div>

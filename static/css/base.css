@@ -6,31 +6,38 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--main-font);
-    background-color: red;
 }
 
-/* Hero Image */ 
-
-.hero-image {
-    background-image:url("https://res.cloudinary.com/dtuvcebdg/image/upload/v1701534130/heroimage_c2ik12.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-
-}
-/*hero
-
-.navbar {
-    color: grey;
-
-}
 main {
     flex: 1 0 auto;
     background-color: var(--white);
 }
+/* Hero Image */ 
+
+.hero-image {
+    background-image:url("https://res.cloudinary.com/dtuvcebdg/image/upload/v1701600305/Untitled_design_1_rhvynf.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+
+
+}
+
+/* Hero text*/ 
+
+.hero-text {
+    text-align: center;
+}
+/*Navbar*/ 
+
+.navbar {
+    color: #D2E8C9;
+
+}
+
 
 /* Card */ 
 .card {
@@ -79,7 +86,7 @@ main {
 /* Footer */
 footer {
     flex-shrink: 0;
-    background-color: #660000;
+    background-color: #D2E8C9;
     display: flex;
     flex-direction: row;
     justify-content: center;
