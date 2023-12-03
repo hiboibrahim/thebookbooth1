@@ -1,6 +1,11 @@
-# from django.shortcuts import render
-from django.views.generic import TemplateView, ListView
+from django.views.generic import ListView
+from books.models import Book
 
 
-class Index(TemplateView):
+class Index(ListView):
     template_name = 'home/index.html'
+    model = Book
+    context_object_name = 'books'
+
+    def get_queryset(self):
+            return self.model.objects.all()[:3]
