@@ -18,6 +18,14 @@ class AddBook(LoginRequiredMixin, CreateView):
     form_class = BookForm
     success_url = '/books/'
 
+    @method_decorator(permission_required('books.add_book', raise_exception=True))
+    def dispatch(self, *args, **kwargs):
+        try:
+            return super().dispatch(*args, **kwargs)
+        except PermissionDenied:
+            messages.error(self.request, "You don't have permission to access this page.")
+            return HttpResponseRedirect('home')
+
     def form_valid(self, form):
         form.instance.user = self.request.user
 
