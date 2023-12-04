@@ -3,4 +3,17 @@ from .models import Genre, Language, Book
 
 admin.site.register(Genre)
 admin.site.register(Language)
-admin.site.register(Book)
+
+
+@admin.register(Book)
+class BookAdmin(admin.ModelAdmin):
+    list_display = (
+        "title",
+        "author",
+        "genre",
+        "language",
+       
+    )
+    list_filter = ('title', 'genre',)
+        
+

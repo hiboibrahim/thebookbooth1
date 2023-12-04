@@ -8,6 +8,7 @@ class BookForm(forms.ModelForm):
         fields = [
             "title",
             "author",
+            "image",
             "language",
             "genre",
             "status",
@@ -17,10 +18,11 @@ class BookForm(forms.ModelForm):
         labels = {
             "title": "Book Title",
             "author": "Author",
+            "image": "Book Cover",
             "genre": "Genre",
             "language": "Language",
             "status": "Publish or Draft",
-            "summary": "Brief Book Description",
+            "summary": "Brief Book Summary",
         }
 
     def save(self, commit=True):
