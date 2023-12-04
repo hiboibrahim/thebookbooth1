@@ -74,7 +74,7 @@ ul .nav-link {
 
 .card img {
     background: white;
-    border: 1px solid white;
+    border: 1px solid grey;
     color: rgba(250, 250, 250, 0.8);
     margin-bottom: 2rem;
 }
