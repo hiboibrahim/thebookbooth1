@@ -10,17 +10,21 @@
             </div>
             <div class="book-detail">
                 <h1 class="text-center">{{ book.title }}</h1>
+                <h2 class="text-center">{{ book.author }}</h2>
+
                 <p class="text-center">Posted by {{book.user}} </p>
                 <hr>
-                <p>{{book.summary}}</p>
+                <p><strong>{{book.summary}}</strong></p>
 
                 {% if request.user == book.user %} 
                 <div class="text-center">
-                    <a href="{% url 'edit_book' book.id %}" class="btn btn-warning w-25">Edit</a>
-                    <a href="{% url 'delete_book' book.id %}" class="btn btn-warning w-25">Delete</a>
+                    <a href="{% url 'edit_book' book.id %}" class="btn btn-success w-25">Edit</a>
+                    <a href="{% url 'delete_book' book.id %}" class="btn btn-success w-25">Delete</a>
                 </div>
                 {% endif %}
             </div>
         </div>
+
+        
        
 {% endblock %}

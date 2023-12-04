@@ -33,10 +33,11 @@ class AddBook(LoginRequiredMixin, CreateView):
 
 
 
-class BookList(LoginRequiredMixin, ListView):
+class Books(LoginRequiredMixin, ListView):
     model = Book
     queryset = Book.objects.all()
     template_name = "books/books.html"
+    context_object_name = 'books'
 
     def get_queryset(self, **kwargs):
         query = self.request.GET.get('q')
@@ -58,8 +59,8 @@ class BookList(LoginRequiredMixin, ListView):
 
 class BookDetail(DetailView):
     model = Book
-    template_name = "book/books.html"
-    context_object_name = 'books'
+    template_name = "books/book_detail.html"
+    context_object_name = 'book'
 
 
 

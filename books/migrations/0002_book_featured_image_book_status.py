@@ -6,20 +6,21 @@ import django.utils.timezone
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('books', '0001_initial'),
+        ("books", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='book',
-            name='featured_image',
-            field=cloudinary.models.CloudinaryField(default='placeholder', max_length=255, verbose_name='image'),
+            model_name="book",
+            name="featured_image",
+            field=cloudinary.models.CloudinaryField(
+                default="placeholder", max_length=255, verbose_name="image"
+            ),
         ),
         migrations.AddField(
-            model_name='book',
-            name='status',
+            model_name="book",
+            name="status",
             field=models.CharField(default=django.utils.timezone.now, max_length=300),
             preserve_default=False,
         ),
