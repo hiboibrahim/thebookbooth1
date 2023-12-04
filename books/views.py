@@ -93,24 +93,20 @@ class BookDetail(DetailView):
 
 
 @login_required
-def edit_book(request, pk):
-    book = get_object_or_404(Book, id=pk)
-    existing_img = book.image
-    print(existing_img)
+def edit_book(request, id):
+    book = get_object_or_404(Book, id=id)
     if book.user != request.user:
         messages.error(request, 'Access denied. Please try again.')
         return redirect('books')
     # user matches the book user / proceed
+    form = BookForm(request.POST or None, request.FILES, instance=book)
     if request.method == 'POST':
-        form = BookForm(request.POST or None, request.FILES)
-        print(request.POST.get("image"))
         if form.is_valid():
-            form.instance.image = request.POST.get("image")
+            form.instance.user = request.user
             form.save()
             messages.success(request, 'Book successfully updated!')
             return redirect('books')
         messages.error(request, 'An error occurred. Please try again.')
-        print(form.errors)
     form = BookForm(instance=book)
     template = 'books/edit_book.html'
     context = {
@@ -127,8 +123,8 @@ def edit_book(request, pk):
 #        return self.request.user == self.get_object().user
 
 @login_required
-def delete_book(request, pk):
-    book = get_object_or_404(Book, id=pk)
+def delete_book(request, id):
+    book = get_object_or_404(Book, id=id)
     if book.user != request.user:
         messages.error(request, 'Access denied. Please try again.')
         return redirect('books')
