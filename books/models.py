@@ -20,7 +20,6 @@ class Language(models.Model):
 
 class Book(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    featured_image = CloudinaryField("image", default="placeholder")
     title = models.CharField(max_length=255, null=False, blank=False)
     author = models.CharField(max_length=100, null=False, blank=False)
     image = ResizedImageField(
@@ -36,8 +35,7 @@ class Book(models.Model):
     language = models.ForeignKey(
         Language, null=False, blank=False, on_delete=models.CASCADE
     )
-    summary = models.CharField(max_length=300, null=False, blank=False)
-    status = models.CharField(max_length=300, null=False, blank=False)
+    summary = models.TextField(max_length=300, null=False, blank=False)
 
     def __str__(self):
         return self.title

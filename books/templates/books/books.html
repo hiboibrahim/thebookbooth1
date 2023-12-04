@@ -17,7 +17,7 @@
               <h3 class="card-title">{{book.author}}</h3>
 
               <p class="card-text">{{book.summary}}</p>
-              <a href="" class="btn btn-success">Read More</a>
+              <a href="{% url 'book_detail' book.id %}" class="btn btn-success">Read More</a>
             </div>
           </div>
     </a>

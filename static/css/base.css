@@ -72,6 +72,13 @@ ul .nav-link {
     margin-top: 1rem;
 }
 
+.card img {
+    background: white;
+    border: 1px solid white;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+}
+
 .books{
     text-decoration: none;
     color: black;
@@ -161,4 +168,5 @@ header {
 
     .book-container {
         flex-direction: row;
+
     }

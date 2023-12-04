@@ -172,7 +172,6 @@ os.path.join(BASE_DIR, "static"),
 
 # Cloudinary Settings
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-CLOUIDNARY_URL = os.environ.get('CLOUDINARY_URL')
 
 
 # Default primary key field type

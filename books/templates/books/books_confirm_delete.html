@@ -1,18 +1,20 @@
-{% extends base.html %}
-
+{% extends 'base.html' %}
 {% block title%} Delete Book {% endblock %}
 
-{% block title %}Delete Book {{ object.title }}{% endblock %} 
 
 {% block content %}
 <div class="container">
-    <h1 class="text-center mt-2">Confirm Book Deletion</h1>
+    <h1 class="text-center mt-2">You are about to delete a book</h1>
     <div class="d-flex justify-content-center pt-3">
         <form method="post" class="text-center">
             {% csrf_token %} 
-            <p>Are you sure you want to delete "{{object.title}}"?</p>
-            <input type="submit" value="Confirm" class="btn btn-primary w-25">
-        </form>
-    </div>
-</div>
+            <p>Are you sure you want to delete {{ book.title }}?</p>
+            <input type="submit" value="Confirm" class="btn btn-outline-success w-25">
+    
+<div class="text-center"> 
+    <button type="submit" class="btn btn-lg btn-outline-success mt-2">Delete</button> 
+</div> 
+</form> 
+</div> 
 {% endblock %}
+

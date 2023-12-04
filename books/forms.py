@@ -11,7 +11,6 @@ class BookForm(forms.ModelForm):
             "image",
             "language",
             "genre",
-            "status",
             "summary",
         ]
 
@@ -21,7 +20,6 @@ class BookForm(forms.ModelForm):
             "image": "Book Cover",
             "genre": "Genre",
             "language": "Language",
-            "status": "Publish or Draft",
             "summary": "Brief Book Summary",
         }
 
