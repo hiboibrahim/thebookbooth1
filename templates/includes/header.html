@@ -1,51 +1,59 @@
 {% load static %}
 
-<header class="text-white" >
+<header class="text-white">
   {% with request.resolver_match.url_name as url_name %}
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-        <!-- Logo -->
-          <a class="navbar-brand" href=""> The Book Booth <i class="fa-solid fa-book"></i></a>
-          <img src="/workspace/thebookbooth1/static/images/logo.jpg" alt="" width="30" height="24">
- </a>
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand d-none d-lg-block" href="#"><img src="{% static 'images/logo.png' %}" alt="The Book Booth Logo"
+            class="logo"></a> <img src="" alt="">
+        </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navigation items -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2">
-              <li class="nav-item">
-                <a class="nav-link {% if url_name == 'home' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {% if url_name == 'books' %}active{% endif %}" aria-current="page" href="{% url 'books' %}">BOOKS</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link {% if url_name == 'add_book' %}active{% endif %}" href="{% url 'add_book' %}">ADD A BOOK</a>
-              </li>
-              {% if request.user.is_authenticated %}
-               
-              <li class="nav-item">
-                <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/logout/">LOGOUT</a>
-              </li>
-              {% else %}
-              <li class="nav-item">
-                <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}" href="/accounts/signup/">REGISTER</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="/accounts/login/">LOGIN</a>
-              </li>
-              {% endif %}
-            </ul>
-            <!-- Form for search bar -->
-            <form class="d-flex" role="search" method="GET" action="{% url 'books' %}">
-                <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-          </div>
-        </div>
-      </nav>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav mx-auto" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item">
+            <a class="nav-link {% if url_name == 'home' %}active{% endif %}" aria-current="page"
+              href="{% url 'home' %}">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if url_name == 'books' %}active{% endif %}" aria-current="page"
+              href="{% url 'books' %}">BOOKS</a>
+          </li>
+          <li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if url_name == 'add_book' %}active{% endif %}" href="{% url 'add_book' %}">ADD A
+              BOOK</a>
+          </li>
+          {% if request.user.is_authenticated %}
+
+          <li class="nav-item">
+            <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}"
+              href="/accounts/logout/">LOGOUT</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}"
+              href="/accounts/signup/">REGISTER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="/accounts/login/">LOGIN</a>
+          </li>
+          {% endif %}
+        </ul>
+        <!-- Form for search bar -->
+        <form class="d-flex" role="search" method="GET" action="{% url 'books' %}">
+          <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
   {% endwith %}
 </header>

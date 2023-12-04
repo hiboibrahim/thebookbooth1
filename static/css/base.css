@@ -31,14 +31,36 @@ main {
 .hero-text {
     text-align: center;
 }
-/*Navbar*/ 
-
+/*Navbar & logo */ 
 .navbar {
-    color: #D2E8C9;
+    color: white;
 
 }
 
+.navbar-brand img{
+    width: 100px;
 
+}
+
+.navbar-brand{
+    margin-right: 0;
+    padding: 0 1em
+
+}
+
+.navbarNav {
+    align-items: center;
+}
+
+.navbar .navbarNav .nav-link{
+    color: black;
+    font-size: 1.1em;
+    padding: .5em 1em ;
+}
+
+ul .nav-link {
+    font-weight: bold;
+}
 /* Card */ 
 .card {
     height: 90%;
