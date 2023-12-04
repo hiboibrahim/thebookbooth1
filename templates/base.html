@@ -25,6 +25,17 @@
 <body>
     {% include 'includes/header.html' %}
 
+    {% if messages %}
+        <section id="alerts">
+            {% for msg in messages %}
+                <!-- all django message tags mirror bootstrap, except error/danger -->
+                <aside class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
+                    <h3>{{ msg }}</h3>
+                </aside>
+            {% endfor %}
+        </section>
+    {% endif %}
+
     <main>
         {% block content %}
         
