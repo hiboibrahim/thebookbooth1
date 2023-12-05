@@ -2,51 +2,49 @@
 
 {% block title %} Book Details - {{book.title}}{% endblock %}
 
-{% block content %} 
-    <div class="container">
-        <div class="book-info mt-3 p-1">
-            <div class="book-img">
-                <img src="{{ book.image.url }}" alt="{{ book.image_alt }}" class="book-pic">
-            </div>
-            <div class="book-detail">
-                <h1 class="text-center">{{ book.title }}</h1>
-                <h2 class="text-center">{{ book.author }}</h2>
+{% block content %}
+<div class="container">
 
-                <p class="text-center">Posted by {{book.user}} </p>
-                <hr>
-                <p><strong>{{book.summary}}</strong></p>
 
-                {% if request.user == book.user %} 
-                <div class="text-center">
-                    <a href="{% url 'edit_book' book.id %}" class="btn btn-success w-25">Edit</a>
-                    <a href="#" class="btn btn-success w-25" data-bs-toggle="modal" data-bs-target="#delete-book-{{ book.id }}">Delete</a>
+    <img src="{{book.img.url}} " alt="{{book.image_alt}}" class="book_img">
+    <p class="name">{{book.title}}</p>
+    <p class="author">{{book.author}} </p>
+    <p class="summary">{{book.summary}}</p>
+
+    {% if request.user == book.user %}
+    <div class="text-center">
+        <a href="{% url 'edit_book' book.id %}" class="edit_btn btn btn-success w-25">Edit</a>
+        <a href="#" class="delete_btn btn btn-success w-25" data-bs-toggle="modal"
+            data-bs-target="#delete-book-{{ book.id }}">Delete</a>
+    </div>
+    <!-- Modal: confirm deletion -->
+    <div class="modal fade" id="delete-book-{{ book.id }}" tabindex="-1"
+        aria-labelledby="delete-book-{{ book.id }}-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="delete-book-{{ book.id }}-label">Delete {{ book.title }}
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <!-- Modal: confirm deletion -->
-                <div class="modal fade" id="delete-book-{{ book.id }}" tabindex="-1" aria-labelledby="delete-book-{{ book.id }}-label" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="delete-book-{{ book.id }}-label">Delete {{ book.title }}</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Are you sure you want to delete this book?
-                            <br>
-                            {{ book.title }}
-                            <br>
-                            <small>This action is permanent, and cannot be undone.</small>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">No</button>
-                        <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Yes</a>
-                        </div>
-                    </div>
-                    </div>
+                <div class="modal-body">
+                    Are you sure you want to delete this book?
+                    <br>
+                    {{ book.title }}
+                    <br>
+                    <small>This action is permanent, and cannot be undone.</small>
                 </div>
-                {% endif %}
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">No</button>
+                    <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Yes</a>
+                </div>
             </div>
         </div>
+    </div>
+    {% endif %}
 
-        
-       
+</div>
+
+
+
 {% endblock %}

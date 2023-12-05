@@ -6,21 +6,23 @@
 {% block content %}
 <h1 class="text-center p-2">Latest Books</h1>
 
-<div class="container d-flex flex-row flex-wrap justify-content-center">
+<div class="cards__container">
 
     {% for book in books %}
     <a class="books" href="{% url 'book_detail' book.id %}" aria-label="Click to view{{books.title}}">
-        <div class="card" style="width: 18rem;">
-            <img src="{{book.image.url}}" class="card-img-top" alt="{{book.image_alt}}">
+       
+      
+      
+      <div class="card">
+            <img src="{{book.image.url}}" class="card-img" alt="{{book.image_alt}}">
             <div class="card-body">
-              <h2 class="card-title">{{book.title}}</h2>
-              <h3 class="card-title">{{book.author}}</h3>
+              <p class="card-title">{{book.title}}</p>
+              <p class="card-title">{{book.author}}</p>
 
-              <p class="card-text">{{book.summary}}</p>
               <a href="{% url 'book_detail' book.id %}" class="btn btn-success">Read More</a>
             </div>
           </div>
-    </a>
+    
     {% endfor %}
 </div>
 
