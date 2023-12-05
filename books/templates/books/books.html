@@ -12,10 +12,10 @@
   <a class="books" href="{% url 'book_detail' book.id %}" aria-label="Click to view{{books.title}}">
 
 
-    <div class="card m-3 custom-card h-100">
+    <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
       <img src="{{book.image.url}}" class="card-img-top" alt="{{book.image_alt}}">
       <div class="card"></div>
-      <div class="card-body">
+      <div class="card-body p-4 py-0 h-xs-440p">
         <p class="card-title"><strong>{{book.title}}</strong></p>
         <p class="card-title">{{book.author}}</p>
 

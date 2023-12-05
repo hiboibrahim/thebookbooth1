@@ -86,12 +86,16 @@ ul .nav-link {
 .card {
     position: relative;
     width: 200px;
-    height: 270px;
     margin: 15px;
     background-color: transparent;
     border-radius: 5px;
     object-fit: cover;
 }
+
+.card.product .btn {
+    bottom: 1.5rem;
+    max-width: 80%;
+  }
 
 .custom-card {
     height: 300px; /* Adjust the height as needed */
