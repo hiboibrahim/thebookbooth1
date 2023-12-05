@@ -1,29 +1,32 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}BROWSE OUR BOOKS{% endblock %}
 
 {% block content %}
 <h1 class="text-center p-2">Latest Books</h1>
 
-<div class="cards__container">
+<div class="cards__container d-flex flex-row flex-wrap justify-content-center">
+  
 
-    {% for book in books %}
-    <a class="books" href="{% url 'book_detail' book.id %}" aria-label="Click to view{{books.title}}">
-       
-      
-      
-      <div class="card">
-            <img src="{{book.image.url}}" class="card-img" alt="{{book.image_alt}}">
-            <div class="card-body">
-              <p class="card-title"><strong>{{book.title}}</strong></p>
-              <p class="card-title">{{book.author}}</p>
+  {% for book in books %}
+  <a class="books" href="{% url 'book_detail' book.id %}" aria-label="Click to view{{books.title}}">
 
-              <a href="{% url 'book_detail' book.id %}" class="btn btn-success">Read More</a>
-            </div>
-          </div>
-    
-    {% endfor %}
+
+    <div class="card m-3 custom-card h-100">
+      <img src="{{book.image.url}}" class="card-img-top" alt="{{book.image_alt}}">
+      <div class="card"></div>
+      <div class="card-body">
+        <p class="card-title"><strong>{{book.title}}</strong></p>
+        <p class="card-title">{{book.author}}</p>
+
+        <a href="{% url 'book_detail' book.id %}" class="btn btn-success">Read More</a>
+      </div>
+    </div>
+
+
+
+
+{% endfor %}
 </div>
 
 {% endblock %}

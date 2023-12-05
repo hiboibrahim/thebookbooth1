@@ -76,12 +76,12 @@ ul .nav-link {
     padding-bottom: 20px;
     padding-top: 20px;
     display: flex;
-    box-shadow: 0px 0px 3px 0px grey;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
   }
+
   
 .card {
     position: relative;
@@ -90,7 +90,13 @@ ul .nav-link {
     margin: 15px;
     background-color: transparent;
     border-radius: 5px;
+    object-fit: cover;
 }
+
+.custom-card {
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide overflow content if it exceeds the specified height */
+  }
 
 
 
@@ -216,6 +222,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom:0px !important;
 
 }
 
