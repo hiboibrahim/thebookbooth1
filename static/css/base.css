@@ -186,6 +186,26 @@ ul .nav-link {
     position: relative;
   }
 
+/* Sign Up & Login styling */
+
+.sign-up-container {
+    width: 60%;
+    height: 70vh;
+    margin: 60px auto;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.sign-in-container {
+    width: 60%;
+    height: 70vh;
+    margin: 60px auto;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+
+}
 
 /* Footer */
 footer {
