@@ -4,14 +4,13 @@
   {% with request.resolver_match.url_name as url_name %}
   <nav class="navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand d-none d-lg-block" href="#"><img src="{% static 'images/logo.png' %}" alt="The Book Booth Logo"
-            class="logo"></a> <img src="" alt="">
-        </a>
+      <!-- Logo -->
+      <a class="navbar-brand d-none d-lg-block" href="#"><img src="{% static 'images/logo.png' %}"
+          alt="The Book Booth Logo" class="logo"></a>
 
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav mx-auto" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Navigation items -->
@@ -34,8 +33,7 @@
           {% if request.user.is_authenticated %}
 
           <li class="nav-item">
-            <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}"
-              href="/accounts/logout/">LOGOUT</a>
+            <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/logout/">LOGOUT</a>
           </li>
           {% else %}
           <li class="nav-item">

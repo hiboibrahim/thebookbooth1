@@ -54,6 +54,9 @@ Emma is a passionate reader who loves immersing herself in different worlds thro
 ## User Flow Chart:
 ![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98)
 
+# Testing:
+
+
 ## Technologies Used:
 The technologies implemneted in this application included HTML5, CSS, Bootstrap, Python and Django.
 
