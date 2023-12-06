@@ -66,7 +66,7 @@ main {
 ul .nav-link {
     font-weight: bold;
 }
-/* Cards */ 
+/* Books Page (cards) */ 
 
 .cards__container {
     width: 90%;
@@ -97,13 +97,21 @@ ul .nav-link {
     max-width: 80%;
   }
 
-.custom-card {
-    height: 300px; /* Adjust the height as needed */
-    overflow: hidden; /* Hide overflow content if it exceeds the specified height */
+
+/* Book Details Page */
+
+.container {
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-top: 25px;
+    padding-bottom:20px ;
+    padding-top:20px ;
+    box-shadow: 0px 0px 3px 0px grey;
+    position: relative;
   }
-
-
-
 .name { 
     font-size: 1.6rem;
     font-weight: bold;
@@ -142,7 +150,7 @@ ul .nav-link {
 .book_img {
     width: 300px;
     height: 400px;
-    margin: 0px 15px;
+    margin: 0px 0px 0px 0px;
     border-radius: 10px;
 }
 .books{

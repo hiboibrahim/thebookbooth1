@@ -3,8 +3,8 @@
 {% block title %} Book Details - {{book.title}}{% endblock %}
 
 {% block content %}
-<div class="container">
-    <img src="{{book.img.url}} " alt="{{book.image_alt}}" class="book_img">
+<div class="container ">
+    <img src="{{book.image.url}}" alt="{{book.image_alt}}" class="book_img">
     <p class="name">{{book.title}}</p>
     <p class="author">{{book.author}} </p>
     <p class="summary">{{book.summary}}</p>
