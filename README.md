@@ -33,10 +33,15 @@ Emma is a passionate reader who loves immersing herself in different worlds thro
 ### Home Page
 ![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a17458a2-fd0b-45cb-af44-387ed524fef6)
 
-### Browse books
+### (Logged in) Browse books
 ![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a4c56a06-3692-467d-813a-ba3797d3087c)
 
 ### Add a Book
+![Add a book wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c0379553-0906-4d77-aca6-beb8fc6834d9)
+
+### Book Detail Page
+
+![Book Details Wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/467fa65e-eb66-4b21-94af-f9090b6a54ab)
 
 ## Features:
 
