@@ -1,5 +1,7 @@
 # The Book Booth:
-![alt text](https://imagetolink.com/ib/8beUxeeG4A)
+
+
+![The Book Booth Mockup](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c45c26db-6090-40fd-afec-047954dba6fc)
 
 
 The Book Both is management system to view availabe books at a local phone booth library. The application was created to allow users to view the available books prior to visiting a phone booth library and to add a book that is currently available. 
@@ -28,16 +30,26 @@ Emma is a passionate reader who loves immersing herself in different worlds thro
 * As a member I want to be able to edit and delete books that I have added so that the books stay up to date.
 
 ## Wireframe & Initial Design:
+### Home Page
+![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a17458a2-fd0b-45cb-af44-387ed524fef6)
+
+### Browse books
+![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a4c56a06-3692-467d-813a-ba3797d3087c)
+
+### Add a Book
 
 ## Features:
+
+
 
 ## Priority Features:
 
 ## Data Model:
 
 ## User Flow Chart:
+![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98)
 
-## Tech Stacks:
+## Technologies Used:
 The technologies implemneted in this application included HTML5, CSS, Bootstrap, Python and Django.
 
 
