@@ -5,28 +5,27 @@
 {% block content %}
 <h1 class="text-center p-2">Latest Books</h1>
 
-<div class="cards__container d-flex flex-row flex-wrap justify-content-center">
-  
+<div class="container">
+  <div class="row">
 
-  {% for book in books %}
-  <a class="books" href="{% url 'book_detail' book.id %}" aria-label="Click to view{{books.title}}">
+    {% for book in books %}
+      <div class="col-6 col-lg-4 col-xl-3">
+        <div class="card text-center product border-0 rounded-0 ">
+          <a class="books" href="{% url 'book_detail' book.id %}" aria-label="Click to view {{books.title}}">
+            <img src="{{book.image.url}}" class="card-img-top img-fluid" alt="{{book.image_alt}}">
+          </a>
 
+          <div class="card-body">
+            <p class="card-title"><strong>{{book.title|truncatechars:20}}</strong></p>
+            <p class="card-text">{{book.author}}</p>
+            <a href="{% url 'book_detail' book.id %}" class="btn btn-sm btn-success">Read More</a>
+          </div>
 
-    <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
-      <img src="{{book.image.url}}" class="card-img-top" alt="{{book.image_alt}}">
-      <div class="card"></div>
-      <div class="card-body p-4 py-0 h-xs-440p">
-        <p class="card-title"><strong>{{book.title}}</strong></p>
-        <p class="card-title">{{book.author}}</p>
-
-        <a href="{% url 'book_detail' book.id %}" class="btn btn-sm btn-success">Read More</a>
+        </div>
       </div>
-    </div>
+    {% endfor %}
 
-
-
-
-{% endfor %}
+  </div>
 </div>
 
 {% endblock %}

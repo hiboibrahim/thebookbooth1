@@ -66,8 +66,18 @@ main {
 ul .nav-link {
     font-weight: bold;
 }
-/* Books Page (cards) */ 
 
+
+img.card-img-top{
+    max-height: 40vh;
+    object-fit: contain;
+}
+
+img.img-fluid.rounded-start {
+    max-height: 40vh;
+}
+/* Books Page (cards) */ 
+/*
 .cards__container {
     width: 90%;
     background-color: white;
@@ -82,7 +92,8 @@ ul .nav-link {
     position: relative;
   }
 
-  
+  */
+  /*
 .card {
     position: relative;
     width: 200px;
@@ -91,6 +102,7 @@ ul .nav-link {
     border-radius: 5px;
     object-fit: cover;
 }
+*/
 
 .card.product .btn {
     bottom: 1.5rem;
@@ -99,7 +111,7 @@ ul .nav-link {
 
 
 /* Book Details Page */
-
+/*
 .container {
     width: 90%;
     height: 400px;
@@ -112,6 +124,7 @@ ul .nav-link {
     box-shadow: 0px 0px 3px 0px grey;
     position: relative;
   }
+  */
 .name { 
     font-size: 1.6rem;
     font-weight: bold;
@@ -190,7 +203,7 @@ ul .nav-link {
     outline: none;
     border: none;
 }
-
+/* 
 .container {
     width: 90%;
     height: 400px;
@@ -202,7 +215,7 @@ ul .nav-link {
     padding-top:20px ;
     box-shadow: 0px 0px 3px 0px grey;
     position: relative;
-  }
+  } */
 
 /* Sign Up & Login styling */
 

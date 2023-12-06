@@ -2,15 +2,19 @@
 {% block title %}Edit Book {% endblock %}
 
 {% block content %}
-<div class="container"> 
-    <form method="post" enctype="multipart/form-data" class="p-2 form"> 
-        <h1 class="text-center">Edit Book</h1> 
-        {% csrf_token %}
-        {{ form.media }} 
-        {{ form| crispy }} 
-        <div class="text-center"> 
-            <button type="submit" class="btn btn-lg btn-outline-success mt-2">Edit</button> 
-        </div> 
-    </form> 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+            <form method="post" enctype="multipart/form-data"> 
+                <h1 class="text-center">Edit Book</h1> 
+                {% csrf_token %}
+                {{ form.media }} 
+                {{ form| crispy }} 
+                <div class="text-center"> 
+                    <button type="submit" class="btn btn-lg btn-outline-success my-2">Edit</button> 
+                </div> 
+            </form> 
+        </div>
+    </div>
 </div> 
 {% endblock %}
