@@ -1,6 +1,6 @@
 from . import views
 from django.urls import path
-from .views import Books, BookDetail
+from .views import Books, BookDetail, SearchResults
 
 
 urlpatterns = [
@@ -10,4 +10,5 @@ urlpatterns = [
     path("<slug:pk>/", views.BookDetail.as_view(), name="book_detail"),
     path("delete/<slug:id>/", views.delete_book, name="delete_book"),
     path("edit/<int:id>/", views.edit_book, name="edit_book"),
+    path('search/', views.SearchResults.as_view(), name='search_results'),
 ]

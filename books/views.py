@@ -132,3 +132,11 @@ def delete_book(request, id):
     book.delete()
     messages.success(request, 'Book successfully deleted.')
     return redirect('books')
+
+
+
+def SearchResults(request):
+    if request.method == 'GET':
+        search = request.GET.get('search')
+        book = Book.objects.all().filter(title=search)
+        return render(request, 'search_results.html', {'book': book})
