@@ -76,55 +76,15 @@ img.card-img-top{
 img.img-fluid.rounded-start {
     max-height: 40vh;
 }
-/* Books Page (cards) */ 
-/*
-.cards__container {
-    width: 90%;
-    background-color: white;
-    border-radius: 10px;
-    margin: 20px auto 40px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-  }
 
-  */
-  /*
-.card {
-    position: relative;
-    width: 200px;
-    margin: 15px;
-    background-color: transparent;
-    border-radius: 5px;
-    object-fit: cover;
-}
-*/
-
+  
 .card.product .btn {
     bottom: 1.5rem;
     max-width: 80%;
   }
 
+/* Book details page*/ 
 
-/* Book Details Page */
-/*
-.container {
-    width: 90%;
-    height: 400px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 0px auto;
-    margin-top: 25px;
-    padding-bottom:20px ;
-    padding-top:20px ;
-    box-shadow: 0px 0px 3px 0px grey;
-    position: relative;
-  }
-  */
 .name { 
     font-size: 1.6rem;
     font-weight: bold;
@@ -160,6 +120,8 @@ img.img-fluid.rounded-start {
     left: 350px;
 }
 
+/* Book Image */
+
 .book_img {
     width: 300px;
     height: 400px;
@@ -174,7 +136,6 @@ img.img-fluid.rounded-start {
     cursor: pointer;
 }
 
-
 .book-info{
     display: flex;
     flex-direction: column;
@@ -186,7 +147,7 @@ img.img-fluid.rounded-start {
     flex-direction: column;
 }
 
-
+/* Buttons */
 .edit_btn{
     left :90%;
     padding: 10px 15px;
@@ -203,19 +164,7 @@ img.img-fluid.rounded-start {
     outline: none;
     border: none;
 }
-/* 
-.container {
-    width: 90%;
-    height: 400px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 0px auto;
-    margin-top: 25px;
-    padding-bottom:20px ;
-    padding-top:20px ;
-    box-shadow: 0px 0px 3px 0px grey;
-    position: relative;
-  } */
+
 
 /* Sign Up & Login styling */
 
@@ -286,5 +235,4 @@ header {
 
     .book-container {
         flex-direction: row;
-
-    }
+}
