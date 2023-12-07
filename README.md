@@ -85,12 +85,30 @@ I have used W3 to validate all of my HTML pages.
 | style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator) | ![screenshot](![validate css](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/200fc160-1092-4cd0-bba4-2ab1a721eb72)
 ) | Pass: No Errors |
 
+## Python
+
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+
+
+
+
+## Browser Compatibility
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Home | About | Contact | etc | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-about.png) | ![screenshot](documentation/browser-chrome-contact.png) | ![screenshot](documentation/browser-chrome-etc.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) | ![screenshot](documentation/browser-firefox-contact.png) | ![screenshot](documentation/browser-firefox-etc.png) | Works as expected |
+
+| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
+|  |Microsoft Edge ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
 
 
 # Testing:
 
 ## Responsiveness:
-Development tools were used to test responsiveness on varying sized devices including desktop, laptop, mobile and tablet size.
+Development tools were used to test responsiveness on varying sized devices including desktop, mobile and tablet size.
 
 
 ## Technologies Used:
