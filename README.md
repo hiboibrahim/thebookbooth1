@@ -43,6 +43,11 @@ Emma is a passionate reader who loves immersing herself in different worlds thro
 
 ![Book Details Wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/467fa65e-eb66-4b21-94af-f9090b6a54ab)
 
+## Agile:
+This project was created using Agile prinicipes via a projectboard on Github. This is the first time I have implemented Agile as an individual developer
+
+add project board and link to vboard
+
 ## Features:
 
 
@@ -54,7 +59,24 @@ Emma is a passionate reader who loves immersing herself in different worlds thro
 ## User Flow Chart:
 ![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98)
 
+
+# Validation
+| Page | W3C URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhiboibrahim.github.io%2Fthebookbooth1%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Pass: No Errors |
+| Books | [W3C](https://validator.w3.org/nu/) | ![screenshot]![Validate Books page](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b7c018c4-a68a-43ee-97c5-778658bbf705)
+ | Pass: No Errors |
+| Add a Book | [W3C](https://validator.w3.org/nu/#l83c79) | ![screenshot]![validate adda book page](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/95eb01b9-22fc-43c4-93de-0ebcd1263467)
+ | Pass: No Errors |
+| Sign In| [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](![validate sign in ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/872629ce-e50d-4870-845b-ed699f9178dc)
+) | Pass: No Errors |
+| Register| [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](documentation/html-validation-quiz.png) | unclosed elements main and div |
+
+
 # Testing:
+
+## Responsiveness:
+Development tools were used to test responsiveness on varying sized devices including desktop, laptop, mobile and tablet size.
 
 
 ## Technologies Used:
