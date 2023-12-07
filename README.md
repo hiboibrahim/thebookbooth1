@@ -48,13 +48,79 @@ This project was created using Agile prinicipes via a projectboard on Github. Th
 
 add project board and link to vboard
 
-## Features:
-
-
-
 ## Priority Features:
 
-## Data Model:
+### Home Page:
+
+#### Navbar & Hero Image:
+![home](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4f033ade-4485-40c2-ac2d-5fc5641b5cb7)
+The landing page provides an introduction to the website with a call to action button encouraging new users to sign up. Signing up and logging in allows them access to view the available books and to add a book to the collection.
+The navigation bar is valuable for users as it provides quick and easy access to important sections of the website. The navigation bar includes links to Home, Books, Add a Book, Register/Logout and Sign In. Displaying a hero image using graphics are both aestetic and a node to the repurposed phone booths that have been transformed into local libraries around the country.
+
+
+#### Registration:
+
+Registration allows users to view the available books and the relevant book details at The Book Booth library. It allows them to add a book as well as edit and delete their addition to ensure the book collection available is updated regularly. 
+
+![signup](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0b6b2b83-d426-4e63-805b-09a6dcdde550)
+
+
+
+#### Sign In:
+
+![sign-in](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6a1d9a16-2211-4403-88a1-3ec1b506cef4)
+
+
+#### Sign Out:
+
+#### Books:
+
+![books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/54c96d8e-6bc3-403f-a8ad-1c4188b60a6e)
+
+
+#### Add a Book:
+
+![add a book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/8e15c1d9-193f-4032-b147-0969c3b45bab)
+
+
+The form allows users to easily add a book to the library which will then be visible on the  books page for the users to browse. Users are also able to edit and delete a book they themselves have added giving them full control over their own contributions.
+
+
+#### Book Details:
+
+![book detail](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e88f0274-670b-4a76-8ef8-7c44a5f440a7)
+
+Users are able to find more information about the book they are interested in. The Book details include the title, author and a brief summary of the book along with an book cover image. This provides users with sufficient information about the book.
+
+
+
+
+## Data Models:
+
+
+| Book   |            |   |
+|----------|:-------------:|------:|
+| Title |  CharField |  |
+| Author |  CharField   |   FK |
+| ISBN | CharField |     |
+| User |  CharField | FK |
+| Genre |  CharField   |   FK |
+| Language | CharField |  FK   |
+| Summary |  TextField |  |
+
+
+| Genre   |            |   |
+|----------|:-------------:|------:|
+| Category |  CharField | FK |
+
+
+| Language   |            |   |
+|----------|:-------------:|------:|
+| Language |  CharField | FK  |
+
+| Author  |            |   |
+|----------|:-------------:|------:|
+| Name |  CharField | FK  |
 
 ## User Flow Chart:
 ![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98)
@@ -96,13 +162,14 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | About | Contact | etc | Notes |
+| Browser | Home | Books | Add a Book | Notes |
 | --- | --- | --- | --- | --- | --- |
 | Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-about.png) | ![screenshot](documentation/browser-chrome-contact.png) | ![screenshot](documentation/browser-chrome-etc.png) | Works as expected |
 | Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) | ![screenshot](documentation/browser-firefox-contact.png) | ![screenshot](documentation/browser-firefox-etc.png) | Works as expected |
 
 | Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
-|  |Microsoft Edge ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
+|  |Microsoft Edge ![screenshot]![microsoft edge browser](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/8e98bcba-7190-4459-9869-6c7407b640aa)
+ | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
 
 
 # Testing:
