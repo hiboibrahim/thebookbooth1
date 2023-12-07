@@ -231,18 +231,19 @@ Mobile devices:
 
 
 
-Laptop Devices:
-![Screenshot_20231207-234024](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/422bad48-71b9-4528-b375-70bfb28cd891)
+Tablet Devices:
 
-![Screenshot_20231207-234033](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e082cee4-2faa-4f32-958c-c6969de39756)
+![homepage](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/5e6eb5c7-4aba-434c-8ed8-8bfd56632f8a)
 
-![Screenshot_20231207-234013](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/953f7728-82ba-458c-86fa-3e0852486844)
+![signup tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c5f5a237-83ee-4ef3-b9b0-444f648ca225)
 
-![0](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/91829273-dc0a-453d-a315-694047af8262)
+![sign in tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9ac1d08b-d4b8-4aa5-a65b-e46040f3b60b)
 
-![Screenshot_20231207-234117 (1)](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/86ddc0b3-4153-41d8-aa68-2bde30322e76)
+![books tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a9c42d34-a49a-48ed-97ba-660c02de3543)
 
-![Screenshot_20231208-000014](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9b52818d-3d59-4658-b93c-128c79cf2791)
+![tabletadd](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b516d61d-6e21-460a-b7f4-5b18abf41d00)
+
+![bookdetails tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/17a0f099-ae15-4b8a-887b-254beac2dbb0)
 
 
 
@@ -269,6 +270,22 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
  | ![screenshot]![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b7e0479f-edfc-4161-be14-f7bd38795a7e)
 
  | Some minor warnings |
+
+### Links
+
+| Link | Expected Outcome | Grade |
+| ------- | ---------------- | ----- |
+| Logo | Navigates to the home page when clicked | Fail |
+| Home | Navigates to the home page when clicked | Pass |
+| Books | Navigates to a book list  page when clicked | Pass |
+| Add a Book | Navigates to a form to add a book when clicked | Pass |
+| Register | Navigates to a registration form when clicked | Pass |
+| Log in | Navigates to a screen where users can log in when clicked | Pass |
+| Logout | Navigates to a page confirming for the user to log out | Pass |
+
+### Features
+
+
 
 
 # Tools and Technologies Used:
