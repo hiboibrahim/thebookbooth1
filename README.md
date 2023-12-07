@@ -20,7 +20,7 @@ A phone booth library is a repurposed phone booth to accomodate books for the co
 
 # Persona and User Stories:
 
-Emma is a passionate reader who loves immersing herself in different worlds through books. She spends most of her free time indulging in her favorite hobby and is always on the lookout for new and exciting reads. She has a phone booth library in her city and would like to view the books that are available to borrow prior to visiting. She also appreciates book reviews to give her a better idea of whether the book is right for her and enjoys sharing her thoughts on the books that she has read with others.
+Emma is a passionate reader who loves immersing herself in different worlds through books. She spends most of her free time indulging in her favorite hobby and is always on the lookout for new and exciting reads. She has a phone booth library in her city and would like to view the books that are available to borrow prior to visiting. 
 
 ## User Stories:
 * As an avid reader I want to be able to browse the available books at The Book Booth before visiting.
@@ -75,8 +75,6 @@ Registration allows users to view the available books and the relevant book deta
 ![sign-in](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6a1d9a16-2211-4403-88a1-3ec1b506cef4)
 
 
-#### Sign Out:
-
 #### Books:
 
 ![books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/54c96d8e-6bc3-403f-a8ad-1c4188b60a6e)
@@ -95,6 +93,8 @@ The form allows users to easily add a book to the library which will then be vis
 ![book detail](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e88f0274-670b-4a76-8ef8-7c44a5f440a7)
 
 Users are able to find more information about the book they are interested in. The Book details include the title, author and a brief summary of the book along with an book cover image. This provides users with sufficient information about the book.
+
+#### Sign Out:
 
 #### Footer:
 
@@ -128,6 +128,7 @@ It allows users to stay connected with the The Book Booth on social media platfo
 | Genre |  CharField   |   FK |
 | Language | CharField |  FK   |
 | Summary |  TextField |  |
+
 
 
 | Genre   |            |   |
@@ -180,11 +181,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 
 
-
-
-
-# Testing:
-
 # Responsiveness:
 Development tools were used to test responsiveness on varying sized devices including desktop, mobile and tablet size.
 
@@ -207,6 +203,9 @@ PC:
 I can confirm that the site is responsive and looks as expected good on different screen sizes.
 
 
+# Testing:
+
+
 # Tools and Technologies Used:
 The technologies implemneted in this application included HTML5, CSS, Bootstrap, Python and Django.
 
@@ -222,7 +221,6 @@ Heroku used for hosting the deployed back-end site.
 Canva Utilized for collaborative design and prototyping(wireframes).
 
 * Google and Stack Overflow utilized for general research or solving a big, information gathering, and various online tools.
-
 
 
 # Languages Used:
