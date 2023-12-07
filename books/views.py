@@ -12,28 +12,6 @@ from .models import Book
 from .forms import BookForm
 
 
-# Create your views here.
-
-# class AddBook(LoginRequiredMixin, CreateView):
-#     template_name = 'books/add_book.html'
-#     model = Book
-#     form_class = BookForm
-#     success_url = '/books/'
-
-#     @method_decorator(permission_required('books.add_book', raise_exception=True))
-#     def dispatch(self, *args, **kwargs):
-#         try:
-#             return super().dispatch(*args, **kwargs)
-#         except Exception:
-#             messages.error(self.request, "You don't have permission to access this page.")
-#             return redirect('home:home')
-
-#     def form_valid(self, form):
-#         form.instance.user = self.request.user
-
-#         return super(AddBook, self).form_valid(form)
-
-
 @login_required
 def add_book(request):
     if request.method == 'POST':
@@ -50,7 +28,6 @@ def add_book(request):
         'form': form,
     }
     return render(request, template, context)
-
 
 
 class Books(LoginRequiredMixin, ListView):
@@ -73,23 +50,10 @@ class Books(LoginRequiredMixin, ListView):
         return books
 
 
-
-    
-
-
 class BookDetail(DetailView):
     model = Book
     template_name = "books/book_detail.html"
     context_object_name = 'book'
-
-
-
-
-# class EditBook(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-#     template_name = 'books/edit_book.html'
-#     model = Book
-#     form_class = BookForm
-#     success_url = '/books/'
 
 
 @login_required
@@ -114,13 +78,6 @@ def edit_book(request, id):
     }
     return render(request, template, context)
 
-
-#class DeleteBook(LoginRequiredMixin, UserPassesTestMixin,DeleteView):
-#    model = Book
-#    success_url = '/books/'
-#
-#    def test_func(self):
-#        return self.request.user == self.get_object().user
 
 @login_required
 def delete_book(request, id):
