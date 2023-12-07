@@ -27,7 +27,11 @@ Emma is a passionate reader who loves immersing herself in different worlds thro
 * As a user I want to be able to add a book to the collection with the relevant information so that other users can view the latest books available in the phone booth library.
 * As a user I want to be able to create an account so that I can view the available books and book details.
 *  As an avid reader I want to be able to browse the available books at The Book Booth before visiting.
-* As a member I want to be able to edit and delete books that I have added so that the books stay up to date.
+* As a user I want to be able to edit and delete books that I have added so that the books stay up to date.
+* As a user I want to explore new books so that I can discover new books to read.
+* As a user I want to be able to read more information about a book so that I can be sure that the book is good choice for me.
+* As an admin I want to be able to moderate the book additions so that I can ensure the books are appropriate and relevant to the users.
+* As a user I want save money on books by borrowing books that myself and my family can enjoy so that we can spend money on other things we value.
 
 ## Wireframe & Initial Design:
 ### Home Page
@@ -92,6 +96,23 @@ The form allows users to easily add a book to the library which will then be vis
 
 Users are able to find more information about the book they are interested in. The Book details include the title, author and a brief summary of the book along with an book cover image. This provides users with sufficient information about the book.
 
+#### Footer:
+
+![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/fde543e6-0ee2-4c17-b8a8-436d4e824f4d)
+
+Links in the footer redirect to respective social media pages. 
+It allows users to stay connected with the The Book Booth on social media platforms, keeping them informed about the any changes that may occur over time.
+
+
+# Future Features:
+
+* Implement a review system so readers can share their thoughts about books that they have completed. This will give others a better idea of whether the book is a good fit for them. 
+* Display if a book is available with a status (Available, Not Available).
+*  Allow users to reserve a book beforehand.
+* A search engine where users can search for books by title, author and genre.
+* Provide locations of nearest libraries.
+* Provide a way for the users to engage and form a secure community
+
 
 
 
@@ -125,6 +146,7 @@ Users are able to find more information about the book they are interested in. T
 ## User Flow Chart:
 ![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98)
 
+The Flowchart served as an efficent way to make important decisions when creating the app. It helped me narrow down which decision were important for the users and admin as well as establishing the appropriate authentication. It also helped me decide which features were the most important i.e adding a book and viewing a list of books that are available to borrow at The Book Booth Library.
 
 # Validation
 ## HTML
@@ -158,30 +180,86 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 
 
-## Browser Compatibility
 
-I've tested my deployed project on multiple browsers to check for compatibility issues.
-
-| Browser | Home | Books | Add a Book | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-about.png) | ![screenshot](documentation/browser-chrome-contact.png) | ![screenshot](documentation/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) | ![screenshot](documentation/browser-firefox-contact.png) | ![screenshot](documentation/browser-firefox-etc.png) | Works as expected |
-
-| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
-|  |Microsoft Edge ![screenshot]![microsoft edge browser](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/8e98bcba-7190-4459-9869-6c7407b640aa)
- | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
 
 
 # Testing:
 
-## Responsiveness:
+# Responsiveness:
 Development tools were used to test responsiveness on varying sized devices including desktop, mobile and tablet size.
 
+Full testing was performed on the following devices:
 
-## Technologies Used:
+PC:
+* Desktop PC
+* Laptop:
+* Macbook Air 2018 13.3-inch screen
+* Mobile Devices:
+* Google Pizel 4a
+
+ Desktop PC tested the site using the following browsers:
+
+* Google Chrome
+* Safari
+* Microsoft Edge
+
+
+I can confirm that the site is responsive and looks as expected good on different screen sizes.
+
+
+# Tools and Technologies Used:
 The technologies implemneted in this application included HTML5, CSS, Bootstrap, Python and Django.
 
+* Python used as the back-end programming language.
+* Git used for version control. (git add, git commit, git push)
+* GitHub used for secure online code storage.
+* GitHub Pages used for hosting the deployed front-end site.
+* Gitpod used as a cloud-based IDE for development.
+* Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
+* ElephantSQL used as the Postgres database.
+Heroku used for hosting the deployed back-end site.
+* Cloudinary used for online static file storage.
+Canva Utilized for collaborative design and prototyping(wireframes).
+
+* Google and Stack Overflow utilized for general research or solving a big, information gathering, and various online tools.
 
 
+
+# Languages Used:
+* HTML5
+* CSS
+* Python
+
+
+# Deployment: 
+
+Deployment
+To deploy the project to Heroku, I followed these steps:
+
+* Creating Heroku App:
+* Logged into Heroku.
+* Selected 'Create New App' from the dashboard.
+* Chose a unique app name.
+* Selected region based on the location.
+* Clicked 'Create App'.
+* Connecting to GitHub:
+
+From the Heroku dashboard, navigated to the 'Deploy' tab.
+* Under 'Deployment Method', chose 'GitHub'.
+* Searched and selected the repository by name.
+* Clicked 'Connect'.
+* Setting Environment Variables:
+* Went to the 'Settings' tab.
+* Located 'Config Vars' and clicked 'Reveal Config Vars'.
+* Added the necessary variables.
+
+Manual Deployment:
+
+* Went back to the 'Deploy' tab.
+* Located 'Manual deploy' at the bottom of the page.
+* Clicked 'Deploy Branch' and waited for the build to finish.
+* Accessing the App:
+* After the deployment was successful, I found and clicked 'Open app' at the top of the app dashboard.
+* These steps ensured that the project was successfully deployed to Heroku. 
 
 
