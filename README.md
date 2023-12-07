@@ -112,8 +112,13 @@ It allows users to stay connected with the The Book Booth on social media platfo
 * A search engine where users can search for books by title, author and genre.
 * Provide locations of nearest libraries.
 * Provide a way for the users to engage and form a secure community
+* Include an about page to inform other of how The Book Booth Library works and how to use it.
 
 
+Database Design:
+
+ERD diagram
+Entity Relationship Diagrams (ERD) help to the developer to make connections between databases and information. Creating an ERD helped me understand how the tables relate to one another. I used LucidChart to create the diagrams and the arrow represent how the data fields relate to one another.
 
 
 ## Data Models:
@@ -174,15 +179,16 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
-
-
-
+| forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/run.py) | ![screenshot]![forms py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/f299346f-bb44-43a2-a8a5-868373d753e3)
+ | Pass: No Errors |
+| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py) | ![screenshot]![settings py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7951202c-2d55-4adb-90d6-8fef0707c82c)
+ | Pass: No Errors |
+| Book views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/blog/views.py) | ![screenshot]![views py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4f545d53-b304-4600-b9fb-d4feb93b6c93)
+ | Pass: No Errors |
+| Book urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/checkout/urls.py) | ![screenshot]![urls py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e3f52187-1f65-4171-b1ba-e9096d1b5fc0)
+ | Pass: No Errors |
+|  models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/profiles/models.py) | ![screenshot]![models py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/f3438ec1-f275-44b6-847d-48a93c0466ed)
+ | Pass: No Errors |
 
 # Responsiveness:
 Development tools were used to test responsiveness on varying sized devices including desktop, mobile and tablet size.
@@ -206,7 +212,63 @@ PC:
 I can confirm that the site is responsive and looks as expected good on different screen sizes.
 
 
+Mobile devices:
+
+![Screenshot_20231207-234024](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0f0b0d7d-a72f-43a4-8a57-bc1cf02a1367)
+
+![Screenshot_20231207-234033](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4c3cc202-b8f6-4f9d-b1bd-cf57c911db65)
+
+![Screenshot_20231207-234013](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/39989e07-4e8d-4faf-8b57-e11686792b38)
+
+
+![0](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/211095bf-ffac-42ca-b1c8-2a45d8444038)
+
+![Screenshot_20231207-234117 (1)](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e52d022b-d3fb-4f6c-8fcb-092386ce566b)
+
+![Screenshot_20231208-000014](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0cd224f9-b46e-4db9-9260-999cc63fff90)
+
+
+
+
+
+Laptop Devices:
+![Screenshot_20231207-234024](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/422bad48-71b9-4528-b375-70bfb28cd891)
+
+![Screenshot_20231207-234033](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e082cee4-2faa-4f32-958c-c6969de39756)
+
+![Screenshot_20231207-234013](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/953f7728-82ba-458c-86fa-3e0852486844)
+
+![0](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/91829273-dc0a-453d-a315-694047af8262)
+
+![Screenshot_20231207-234117 (1)](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/86ddc0b3-4153-41d8-aa68-2bde30322e76)
+
+![Screenshot_20231208-000014](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9b52818d-3d59-4658-b93c-128c79cf2791)
+
+
+
+Desktop Devices:
+
+
+
 # Testing:
+
+## Lighthouse Audit:
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+
+| Page | Mobile | Desktop | Notes |
+| --- | --- | --- | --- |
+| Home | ![screenshot]![audit books mobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d5193777-0db5-4187-9808-309c905ab6ab)
+ | ![screenshot]![homeaudit](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/ec012acd-1801-4e8f-b469-be5ef3b9f5c9)
+ | Some minor warnings |
+| Books | ![screenshot]![audit books mobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d5193777-0db5-4187-9808-309c905ab6ab)
+ | ![screenshot]![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0518aafa-7392-4833-b2d1-f797562ab2b9)
+ | Some minor warnings |
+ | Abb book | ![screenshot]![audit addbook mobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6d76c37f-39e1-4177-846c-52c612d4fde4)
+ | ![screenshot]![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b7e0479f-edfc-4161-be14-f7bd38795a7e)
+
+ | Some minor warnings |
 
 
 # Tools and Technologies Used:
