@@ -17,7 +17,7 @@
 <div class="row">
   <div class="col-md-8 mt-3 offset-md-2">
 
-    <form class="form p-2" action="{% url 'account_signup' %}"> {% csrf_token %} {{ form | crispy }}
+    <form class="form p-2" action="{% url 'account_signup' %}" method="post"> {% csrf_token %} {{ form | crispy }}
       {% if redirect_field_value %} <input type="hidden" name="{{ redirect_field_name }}"
         value="{{ redirect_field_value }}"> {% endif %}
       <div class="text-center">
