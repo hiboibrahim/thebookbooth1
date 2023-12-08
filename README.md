@@ -9,6 +9,8 @@ The Book Both is management system to view availabe books at a local phone booth
 
 A phone booth library is a repurposed phone booth to accomodate books for the community to borrow. The idea is that a reader can borrow a book and return it later, or leave another book in it's place. 
 
+The live site can be viewed here : 
+
 
 # Purpose and Target Audience:
  **Problem Statement:** The Phone booth libraries are located all across the country making it possible for individuals to borrow and donate books to the collections at specified phone booths. The user finds it difficult to know which books are available prior to reaching the phone booth and is unable to communicate to other users that they have added a new book.
@@ -72,8 +74,6 @@ The colours were selected with the intention of complementing the hero image and
 Varta
 
 Goudy Book Letter 1911
-
-
 
 
 ## Priority Features:
@@ -362,7 +362,7 @@ The technologies implemneted in this application included HTML5, CSS, Bootstrap,
 * Cloudinary used for online static file storage.
 Canva Utilized for collaborative design and prototyping(wireframes).
 
-* Google and Stack Overflow utilized for general research or solving a big, information gathering, and various online tools.
+* Google and Stack Overflow utilized for general research or solving a bug, information gathering, and various online tools.
 
 
 # Languages Used:
@@ -372,11 +372,26 @@ Canva Utilized for collaborative design and prototyping(wireframes).
 
 # Deployment :
 
-Heroku was used to deploy 
+I used the steps used when deploying our django blog to deploy this application. The instructions for this mainly came from the follow along vidoes and text-steps provided on the code institute LMS.
 
 # Bugs
 
+All the bugs that occured during the creation of this application have been resolved. There is a section of the application which allows you to reset your password, however they were not within the scope of this particular project and will be addreesed in the near future along with the other future features to me implmeneted.
 
 
 # Credit: 
+
+* Although I used the django blog resources provided on the LMS, I also received alot of additional clarification by following along with django projects on YouTube. One of the vidoes I found epsecially helpful was : https://youtu.be/JzDBCZTgVyw?si=w3BBwJswUjBTm1xw
+
+Stack Overflow was used to solve any smaller bugs and further clarification on errors I was receiving in my terminal.
+
+I used this site to generate a personal and created user stories: https://founderpal.ai/user-persona-generator
+
+A special thank you to all the other indivudals in our cohort for their continuous support throughout the course.
+
+The added books were taken from Waterstones Website.
+
+Fontawesome was used for icons and the fonts used were derived from Google Fonts.
+
+Wireframes, logo and flowcharts were created using Canva. 
 
