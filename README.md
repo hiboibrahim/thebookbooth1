@@ -1,7 +1,8 @@
 # The Book Booth:
 
 
-![The Book Booth Mockup](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c45c26db-6090-40fd-afec-047954dba6fc)
+![Beige Brown Aesthetic Save The Date Editable Mockup Instagram Post](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/60fe1de3-136e-4a21-9886-3b77a5931bfa)
+
 
 
 The Book Both is management system to view availabe books at a local phone booth library. The application was created to allow users to view the available books prior to visiting a phone booth library and to add a book that is currently available. 
@@ -12,7 +13,7 @@ A phone booth library is a repurposed phone booth to accomodate books for the co
 # Purpose and Target Audience:
  **Problem Statement:** The Phone booth libraries are located all across the country making it possible for individuals to borrow and donate books to the collections at specified phone booths. The user finds it difficult to know which books are available prior to reaching the phone booth and is unable to communicate to other users that they have added a new book.
 
-**Purpose:** This book management app will list the available books and show if they are available to borrow. Users will also be able to add a book to the collection as well edit and delete the book they added to ensure the application is up-to-date.
+**Purpose:** This book management app will list the available books and show if they are available to borrow. Users will also be able to add a book to the collection as well edit and delete the book they have added to ensure the application is up-to-date.
 
 **Target Audience:** The primary target audience include avid readers who enjoy using phone booth libraries as well as individuals who want to be apart of a reading community where they can share their thoughts on the books they have completed in the collection.
 
@@ -48,14 +49,31 @@ Emma is a passionate reader who loves immersing herself in different worlds thro
 ![Book Details Wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/467fa65e-eb66-4b21-94af-f9090b6a54ab)
 
 ## Agile:
-This project was created using Agile principles via a projectboard on Github. This is the first time I have implemented Agile as an individual developer.
+This project was created using Agile principles via a projectboard on Github. This is the first time I have implemented Agile as an individual developer. However, creating user stories and identifying accepterance criteria acted as a roadmap to target the various features and functionalities of the site. It helped me stay on track and reduced distractions.
 
 ![project board](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/98b7d24d-7234-4155-af15-df72403659f9)
 
 
 ## Design Choices:
 
-Colour scheme:
+### Colour scheme:
+
+#fafafa - Header
+
+Dark Green - Buttons
+
+#809977 - Footer
+
+The colours were selected with the intention of complementing the hero image and the idea was to ensure the image was appreciated.
+
+### Typography:
+ The following fonts were chosen for a clean and modern look that is both readable and minimal.
+
+Varta
+
+Goudy Book Letter 1911
+
+
 
 
 ## Priority Features:
@@ -248,6 +266,7 @@ Mobile devices:
 
 Tablet Devices:
 
+
 ![homepage](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/5e6eb5c7-4aba-434c-8ed8-8bfd56632f8a)
 
 ![signup tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c5f5a237-83ee-4ef3-b9b0-444f648ca225)
@@ -311,16 +330,15 @@ Add a book
 ## Testing 
 
 
-| Feature | Expected Outcome | Grade |
-| ------- | ---------------- | ----- |
-| Modal | A message will appear informing the user of a successful action | Pass |
-| User logged in | Text displays the user logged in with their username | Pass |
-| View books | Users can see available books which have been added | Pass
-| Add a book | Add a book to the book collection that will be available to borrow | Pass |
+| Feature | Expected Outcome | Grade | Screenshots |
+| ------- | ---------------- | ----- | --------- |
+| Modal | A message will appear informing the user of a successful action | Pass | ![modal sign out ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9e8658e8-f751-4cdf-be3d-ca19ad6c47b2)
+| User logged in | Text displays the user logged in with their username | Pass | ![modal sign in name](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/cc4a71db-9962-49c1-b4b6-563000687ad7)
+| View books | Users can see available books which have been added | Pass | ![testing books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/01cc3a5b-db46-4742-a8e1-cf715d78c89b)
+| Add a book | Add a book to the book collection that will be available to borrow | Pass | ![addbook](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/82133f44-d43a-4f40-863a-f4e8970057aa)
 | Admin has access to crud functionality of all additions | Admin can edit or delete any book addition | Pass |
-| Edit a book | A user can edit the details on the book that they have addded. It will update their addition on the books page | Pass |
-| Delete a book | A user who added a book OR an admin can delete a book. It will then be deleted from the DB | Pass |
-| Edit a review | Users can edit their own review. It will then be put back up for submission. | Pass |
+| Edit a book | A user can edit the details on the book that they have addded. It will update their addition on the books page | Pass | ![edit book ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/79f6de7e-fd14-4c34-a474-483b7cd5285f)
+| Delete a book | A user who added a book OR an admin can delete a book. It will then be deleted from the DB | Pass | ![delete book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/88275723-e875-404a-b96f-58bac0a4907a)
 | Registration | New users can access a registration form from the "Register" link | Pass |
 | Log in | Users can log in using a form after clicking "Log in" | Pass |
 | Log out | Users get logged out after clicking "Log out" | Pass |
