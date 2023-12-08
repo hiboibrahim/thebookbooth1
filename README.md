@@ -52,6 +52,12 @@ This project was created using Agile principles via a projectboard on Github. Th
 
 ![project board](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/98b7d24d-7234-4155-af15-df72403659f9)
 
+
+## Design Choices:
+
+Colour scheme:
+
+
 ## Priority Features:
 
 ### Home Page:
@@ -196,17 +202,26 @@ Development tools were used to test responsiveness on varying sized devices incl
 Full testing was performed on the following devices:
 
 PC:
-* Desktop PC
 * Laptop:
 * Macbook Air 2018 13.3-inch screen
-* Mobile Devices:
-* Google Pizel 4a
+* Lenovo Thinkpad 14" screen
 
- Desktop PC tested the site using the following browsers:
+ Mobile Devices:
+* Google Pixel 4a
+
+ Laptop tested the site using the following browsers:
 
 * Google Chrome
+
+![chrome](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/545ba4e5-c7bc-4fd8-8660-1444dcb3be2a)
+
+
 * Safari
+
 * Microsoft Edge
+
+![microsoft edge](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/1570a9cd-6591-45db-840b-ecbe7f7aeb5b)
+
 
 
 I can confirm that the site is responsive and looks as expected good on different screen sizes.
@@ -247,8 +262,6 @@ Tablet Devices:
 
 
 
-Desktop Devices:
-
 
 
 # Testing:
@@ -258,20 +271,32 @@ Desktop Devices:
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 
-| Page | Mobile | Desktop | Notes |
-| --- | --- | --- | --- |
-| Home | ![screenshot]![audit books mobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d5193777-0db5-4187-9808-309c905ab6ab)
- | ![screenshot]![homeaudit](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/ec012acd-1801-4e8f-b469-be5ef3b9f5c9)
- | Some minor warnings |
-| Books | ![screenshot]![audit books mobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d5193777-0db5-4187-9808-309c905ab6ab)
- | ![screenshot]![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0518aafa-7392-4833-b2d1-f797562ab2b9)
- | Some minor warnings |
- | Abb book | ![screenshot]![audit addbook mobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6d76c37f-39e1-4177-846c-52c612d4fde4)
- | ![screenshot]![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b7e0479f-edfc-4161-be14-f7bd38795a7e)
+* On a laptop:
 
- | Some minor warnings |
+Home
 
-### Links
+![homeaudit](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/5fa9bac2-d4bf-47fe-bb4a-50b3b0c4938b)
+
+Books 
+
+![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d6401b01-e4d5-4ed1-b8e9-ff6d5eeb4bd9)
+
+Add a book 
+![audit add book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e429ee62-ecbe-4b2f-8521-28da15773a46)
+
+On a mobile device:
+
+Home 
+![audit home mobile ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/348889e3-8c4e-41d4-b1c6-2c974780e23b)
+
+Books
+![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/fad662af-54da-45d0-b381-c0d70955e4e4)
+
+Add a book 
+![audit addbookmobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/634965ca-1b9d-4aa1-bd17-bda89f9fbafe)
+
+
+## Links
 
 | Link | Expected Outcome | Grade |
 | ------- | ---------------- | ----- |
@@ -283,9 +308,26 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Log in | Navigates to a screen where users can log in when clicked | Pass |
 | Logout | Navigates to a page confirming for the user to log out | Pass |
 
-### Features
+## Testing 
 
 
+| Feature | Expected Outcome | Grade |
+| ------- | ---------------- | ----- |
+| Modal | A message will appear informing the user of a successful action | Pass |
+| User logged in | Text displays the user logged in with their username | Pass |
+| View books | Users can see available books which have been added | Pass
+| Add a book | Add a book to the book collection that will be available to borrow | Pass |
+| Admin has access to crud functionality of all additions | Admin can edit or delete any book addition | Pass |
+| Edit a book | A user can edit the details on the book that they have addded. It will update their addition on the books page | Pass |
+| Delete a book | A user who added a book OR an admin can delete a book. It will then be deleted from the DB | Pass |
+| Edit a review | Users can edit their own review. It will then be put back up for submission. | Pass |
+| Registration | New users can access a registration form from the "Register" link | Pass |
+| Log in | Users can log in using a form after clicking "Log in" | Pass |
+| Log out | Users get logged out after clicking "Log out" | Pass |
+| Grid display | A CSS grid will display the books in a clear, responsive format | Pass |
+| Functional buttons | Edit, delete, create buttons will be functional throughout the site | Pass |
+| Footer | A footer displays social information | Pass |
+| Social links work | The social links will navigate to a new page when they're clicked. They will open in a new tab | Pass |
 
 
 # Tools and Technologies Used:
