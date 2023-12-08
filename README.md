@@ -339,13 +339,13 @@ Add a book
 | Admin has access to crud functionality of all additions | Admin can edit or delete any book addition | Pass |
 | Edit a book | A user can edit the details on the book that they have addded. It will update their addition on the books page | Pass | ![edit book ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/79f6de7e-fd14-4c34-a474-483b7cd5285f)
 | Delete a book | A user who added a book OR an admin can delete a book. It will then be deleted from the DB | Pass | ![delete book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/88275723-e875-404a-b96f-58bac0a4907a)
-| Registration | New users can access a registration form from the "Register" link | Pass |
-| Log in | Users can log in using a form after clicking "Log in" | Pass |
-| Log out | Users get logged out after clicking "Log out" | Pass |
-| Grid display | A CSS grid will display the books in a clear, responsive format | Pass |
-| Functional buttons | Edit, delete, create buttons will be functional throughout the site | Pass |
-| Footer | A footer displays social information | Pass |
-| Social links work | The social links will navigate to a new page when they're clicked. They will open in a new tab | Pass |
+| Registration | New users can access a registration form from the "Register" link | Pass | ![testing sign up](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e9e6c4e1-c90a-4854-a11c-014a8fc80043)
+| Log in | Users can log in using a form after clicking "Log in" | Pass | ![sign in testing ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/3fafee34-e6d6-4162-8989-faa78e1bf355)
+| Log out | Users get logged out after clicking "Log out" | Pass | ![testing sign out](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d7d377aa-fc2d-4025-a73e-22d2d81c622a)
+| Grid display | A CSS grid will display the books in a clear, responsive format | Pass | N/A
+| Functional buttons | Edit, delete, create buttons will be functional throughout the site | Pass | ![edit delete buttons](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/67cfb78d-7d5b-4072-8aa8-812b9c444b67)
+| Footer | A footer displays social information | Pass | ![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0879fada-18a4-4363-8257-0af0061cf79f)
+| Social links work | The social links will navigate to a new page when they're clicked. They will open in a new tab | Pass | ![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0879fada-18a4-4363-8257-0af0061cf79f)
 
 
 # Tools and Technologies Used:
@@ -358,7 +358,7 @@ The technologies implemneted in this application included HTML5, CSS, Bootstrap,
 * Gitpod used as a cloud-based IDE for development.
 * Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
 * ElephantSQL used as the Postgres database.
-Heroku used for hosting the deployed back-end site.
+* Heroku used for hosting the deployed back-end site.
 * Cloudinary used for online static file storage.
 Canva Utilized for collaborative design and prototyping(wireframes).
 
@@ -370,36 +370,13 @@ Canva Utilized for collaborative design and prototyping(wireframes).
 * CSS
 * Python
 
+# Deployment :
 
-# Deployment: 
+Heroku was used to deploy 
 
-Deployment
-To deploy the project to Heroku, I followed these steps:
+# Bugs
 
-* Creating Heroku App:
-* Logged into Heroku.
-* Selected 'Create New App' from the dashboard.
-* Chose a unique app name.
-* Selected region based on the location.
-* Clicked 'Create App'.
-* Connecting to GitHub:
 
-From the Heroku dashboard, navigated to the 'Deploy' tab.
-* Under 'Deployment Method', chose 'GitHub'.
-* Searched and selected the repository by name.
-* Clicked 'Connect'.
-* Setting Environment Variables:
-* Went to the 'Settings' tab.
-* Located 'Config Vars' and clicked 'Reveal Config Vars'.
-* Added the necessary variables.
 
-Manual Deployment:
-
-* Went back to the 'Deploy' tab.
-* Located 'Manual deploy' at the bottom of the page.
-* Clicked 'Deploy Branch' and waited for the build to finish.
-* Accessing the App:
-* After the deployment was successful, I found and clicked 'Open app' at the top of the app dashboard.
-* These steps ensured that the project was successfully deployed to Heroku. 
-
+# Credit: 
 
